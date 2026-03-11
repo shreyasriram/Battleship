@@ -2,7 +2,7 @@
   <img src="images/battleship1.png" />
 </p>
 
-# Battleship
+# Battleship Test
 <p align="justify">
 This repository holds the Java and C++ version of a Battleship game, created during the Object Oriented Programming course, completed during my first year of studies in the Computer Engineering and Informatics Department at the University of Patras. 
 </p>
