@@ -1,5 +1,5 @@
 import java.util.*;
-
+//test
 public class Game
 {   
     static Scanner input = new Scanner(System.in); //xrhsimopoioume thn klash Scanner gia na pernoume times apo ton xrhsth
