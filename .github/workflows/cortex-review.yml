@@ -3,7 +3,7 @@ name: Pervaziv AI Code Review
 on:
   push:
     branches:
-      - Action              # runs on every push to main
+      - main              # runs on every push to main
   schedule:
     - cron: '0 0 * * *'  # runs every day at midnight UTC
 
@@ -13,9 +13,10 @@ jobs:
     permissions:
       security-events: write
       actions: read
-      contents: read
+      contents: write
+      pull-requests: write
     steps:
-      - uses: pervaziv/pervaziv-ai-code-review@initial-commit
+      - uses: jyothsnalade/cortex-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
